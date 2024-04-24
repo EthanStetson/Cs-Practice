@@ -1,8 +1,10 @@
 import logo from './assets/huxli_logo.svg';
 import sheild from './assets/Sheild.svg';
+import dangersign from './assets/DangerSign.svg';
+import charts from './assets/Charts.svg';
 import './App.css';
 import {Paper,Typography} from '@mui/material';
-import React, { useState } from 'react';
+import {React,useState} from 'react';
 
 function File1() {
   const [hover, setHover] = useState(false);  // State to handle hover
@@ -40,9 +42,9 @@ function File1() {
         {/* Huxli textBox */}
       <Typography style={{
           marginLeft:"0%",
-          marginTop:"3%",
+          marginTop:"2%",
           display:"flex",
-          fontSize:'40px',
+          fontSize:'48px',
           fontStyle:"normal",
           fontFamily:"Nunito",
           justifyContent:'center',
@@ -85,17 +87,20 @@ function File1() {
         flexDirection:"row",
         borderRadius:"100px"  
       }}>
-        {/* Huxli Logo */}
-        <img src={logo}style={{
-          width:"80%",
-          height:"80%",
-          marginLeft:"10%",
-          marginTop:"8%",
+        {/* Charts */}
+        <img src={charts}style={{
+          width:"25px",
+          height:"25px",
+          marginLeft:"16%",
+          marginTop:"19%",
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
         }}/>
         {/* box1 text*/}
       </Paper>
         <Typography style={{
-           marginLeft:"6%",
+           marginLeft:"8%",
            marginRight:"5%",
            display:"flex",
            fontFamily:"Nunito",
@@ -143,10 +148,20 @@ function File1() {
         flexDirection:"row",
         borderRadius:"100px"  
       }}>
+         {/* Danger Logo */}
+      <img src={dangersign}style={{
+          width:"22px",
+          height:"22px",
+          marginLeft:"19.5%",
+          marginTop:'14%',
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
+        }}/>
         </Paper>
         {/* box2 text*/}
             <Typography style={{
-              marginLeft:"5%",
+              marginLeft:"8%",
               marginRight:"5%",
               display:"flex",
               fontFamily:"Nunito",
@@ -193,7 +208,7 @@ function File1() {
         flexDirection:"row",
         borderRadius:"100px"  
       }}>
-        {/* Huxli Logo */}
+        {/* Sheild Logo */}
       <img src={sheild}style={{
           width:"25px",
           height:"25px",
@@ -206,7 +221,7 @@ function File1() {
         </Paper> 
         {/* box3 text*/}
         <Typography style={{
-              marginLeft:"10%",
+              marginLeft:"8%",
               marginRight:"5%",
               display:"flex",
               fontFamily:"Nunito",
